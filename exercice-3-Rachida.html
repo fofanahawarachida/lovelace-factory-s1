@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 3 - JavaScript interactif</title>
+</head>
+
+<body>
+
+  <h1>Exercice 3 — JavaScript interactif</h1>
+
+  
+  <section>
+    <h2>Exercice 1 : Afficher / Cacher une section</h2>
+
+    <button id="btn-toggle">Voir la description du projet</button>
+
+    <p id="description-projet" style="display: none;">
+      Ceci est la description du projet Lovelace Factory.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ============================= -->
+  <!-- EXERCICE 2 : Message personnalisé -->
+  <!-- ============================= -->
+  <section>
+    <h2>Exercice 2 : Message personnalisé</h2>
+
+    <input type="text" id="champ-prenom" placeholder="Entrez votre prénom">
+    <button id="btn-bienvenue">Dire bonjour</button>
+
+    <p id="zone-message"></p>
+  </section>
+
+  <hr>
+
+  <!-- ============================= -->
+  <!-- EXERCICE 3 : Validation formulaire -->
+  <!-- ============================= -->
+  <section>
+    <h2>Exercice 3 : Validation du formulaire</h2>
+
+    <form id="formulaire-projet">
+
+      <label for="nom-projet">Nom du projet :</label>
+      <input type="text" id="nom-projet">
+      <p id="erreur-nom" style="color: red;"></p>
+
+      <label for="description">Description :</label>
+      <textarea id="description"></textarea>
+      <p id="erreur-description" style="color: red;"></p>
+
+      <label for="email-projet">Email :</label>
+      <input type="email" id="email-projet">
+      <p id="erreur-email" style="color: red;"></p>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <p id="message-final" style="font-weight: bold;"></p>
+  </section>
+
+  <script src="exercice-3-Rachida.js"></script>
+</body>
+</html>
